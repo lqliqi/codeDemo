@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS多行文本显示省略号环绕按钮</title>
+  <title>CSS多行文本显示省略号环绕按钮布局</title>
   <style>
     *{
       margin: 0;
@@ -57,11 +57,14 @@
 <body>
   <div class="wrapper">
     <div class="w_text">
-    <button class="btn">点击观看</button>
-    中国服贸会国家会展、国家会议中心（天津）
-    中国服贸会国家会展、国家会议中心（天津）
-    中国建筑科学大会暨绿色智慧建筑博览会新闻发布会 
+    <button class="btn" id="btn">查看仓库</button>
+     基于 Vue3, Vite,Element Plus TS 创建的后台管理系统,使用 EditorConfig + Prettier + ESLint 组合来实现代码规范化,集成 husky 和 lint-staged ，使git 提交代码时校验 eslint 规则不通过不允许提交
     </div>
   </div>
+  <script>
+    document.getElementById('btn').onclick = function (){
+      window.location.href = 'https://github.com/lqliqi/vue3-vite-element-plus-ts-admin'
+    }
+  </script>
 </body>
 </html>
