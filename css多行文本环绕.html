@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS多行文本显示省略号后跟按钮</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body,html{
+      height: 100%;
+      overflow: hidden;
+    }
+    .wrapper{
+      width: 100%;
+      margin: 50px auto;
+      border: 1px solid #eaecef;
+      padding: 14px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      box-shadow: 20px 20px 60px #bebebe;
+      display: flex;
+    }
+    .w_text {
+      width: 100%;
+      line-height: 26px;
+      word-break: break-all;
+      word-wrap: break-word;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+    .w_text::before{
+      content: 'AAAA';
+      float: right;
+      height: 100%;
+      margin-bottom: -24px;
+    }
+    .btn {
+      float: right;
+      clear: both;
+      background: linear-gradient(90deg,rgba(255,179,1,1) 0%,rgba(254,140,1,1) 100%);
+      border-radius: 4px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="w_text">
+    <button class="btn">点击观看</button>
+    中国服贸会国家会展、国家会议中心（天津）
+    中国服贸会国家会展、国家会议中心（天津）
+    中国建筑科学大会暨绿色智慧建筑博览会新闻发布会 
+    </div>
+  </div>
+</body>
+</html>
